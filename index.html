@@ -224,15 +224,15 @@
 	LINK-SLIDE BLOCK
 *************************-->
 <div class="bot-link" :class="{_dark: isShowPage === 0, _light: isShowPage != 0}">
-	<a href="#">
+	<a href="#stories">
 		<div class="link-scroll light-border" v-if="isShowPage === 1">Фотографии</div>
 	</a>
 
-	<a href="#">
+	<a href="#stories">
 		<div class="link-scroll light-border" v-if="isShowPage === 2">Перейти к историям</div>
 	</a>
 
-	<a href="#">
+	<a href="#stories">
 		<div class="link-scroll light-border" v-if="isShowPage === 6">Другие новости</div>
 	</a>
 
@@ -243,6 +243,7 @@
 	STORIES BLOCK
 *************************-->
 <div class="stories-fon _light">
+<a name="stories"></a>
 <!--***********************
 	BIOGRAFY
 *************************-->
@@ -289,5 +290,6 @@
 
 </div><!--/.main-->
 	<script src="js/script.js"></script>
+
 </body>
 </html>
