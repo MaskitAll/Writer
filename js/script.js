@@ -31,7 +31,6 @@ new Vue({
 		aboutSign: "Inst: instagram",
 
 		aboutPhotos: [
-
 			{
 				img: "#",
 				commentTitle: "Лучший писатель года",
@@ -68,6 +67,19 @@ new Vue({
 
 
 
+		contactHeader: "Контакты",
+
+		phone: "tel: +7 800 555 35 35",
+		phoneNumber: "+7 800 555 35 35",
+		mail: "mailto: G-mai@e-mail.ru",
+		mailName: "G-mai@e-mail.ru",
+
+
+
+		reviewsHeader: "Отзывы",
+
+
+		booksHeader: "Книги",
 
 
 		commHeader: "Общение",

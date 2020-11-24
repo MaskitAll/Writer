@@ -19,6 +19,12 @@
 	}
 }
 
+._checked{
+	&, a{
+	@include theme(checked);
+	}
+}
+
 
 ._box-hang{
 	@include border(outsideS);
@@ -90,6 +96,33 @@ p{
 
 .date{
 	@include text__Content(18px, 400, 2.5, normal);
+}
+
+.btn-submit{
+	@include text__Content(18px, 500, 1.25, normal);
+
+	padding: 10px 30px;
+}
+
+.contact-data{
+	@include text__Content(24px, 500, 1.25, normal);
+
+	padding: 12px 20px 12px 70px;
+	margin: 10px;
+
+}
+
+.link {
+	@include text__Content(16px, 400, 1.25, normal);
+
+	border-bottom: 1px solid;
+	margin: 10px 30px 0 0;
+	padding-bottom: 5px;
+	list-style: none;
+
+	&:hover{
+		color: $color__text-menu-checked;
+	}
 }
 
 .link-scroll{

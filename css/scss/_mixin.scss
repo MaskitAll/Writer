@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 /*VARs*/
-$color__text-menu: green;
+$color__text-menu: #FFE8CC;
 $color__back-menu: #202020;
 $color__text-menu-checked: #FF9900;
 
@@ -68,6 +68,11 @@ $color__btn-light-checked: #FF9900;
 	@else if $theme == news {
 		color: $color__text-news;
 		background-color: $color__back-news;
+//		border-color: $color__back-news;
+	}
+	@else if $theme == checked {
+		color: $color__text-news;
+		background-color: $color__btn-light-checked;
 //		border-color: $color__back-news;
 	}
 }

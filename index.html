@@ -78,15 +78,13 @@
 		</a>
 
 		<div class="title__content">
-			<h2>{{bookTitle}}</h2>
+			<h2 style="text-align: start;">{{bookTitle}}</h2>
 			<p 	class="content" v-html="bookContent"></p>
 
 			<div class="links">
 				<ul class="links-title">{{linksTitle}}
 					<li v-for="link in links">
-						<p style="margin: 0;">
 						<a :href="link.link" class="link">{{link.name}}</a>
-						</p>
 					</li>
 				</ul>
 			</div>
@@ -96,7 +94,7 @@
 				<button class="sign">Book-трейлер</button>
 			</div>
 		</div>
-	</div>
+	</div><!--/title-->
 
 <!--***********************
 	BIOGRAFY
@@ -112,12 +110,12 @@
 		<p v-for="paragraf in aboutContent">{{paragraf.paragraf}}</p>
 		<span class="sign _box-hang _news">{{aboutSign}}</span>
 	</div>
-</div>
+</div><!--/about-->
 
 <!--***********************
 	COMMUNICATION
 *************************-->
-	<div id="communication" class="block__content _light" v-if="isShowPage === 2">
+	<div id="communication" class="block__content" v-if="isShowPage === 2">
 		<div class="block__header">
 			<h2>{{ commHeader }}</h2>
 		</div>
@@ -135,26 +133,80 @@
 			</div>
 			<p v-for="paragraf in commContent">{{paragraf.paragraf}}</p>
 		</div>
-	</div>
+	</div><!--/communication-->
 
+
+<!--***********************
+	CONTACTS
+*************************-->
+	<div id="contacts" class="block__content" v-if="isShowPage === 3">
+		<div class="block__header">
+			<h2>{{ contactHeader }}</h2>
+		</div>
+
+		<div class="content">
+			<div class="contacts-container">
+				<div class="contact-data _box-hang _checked"><a :href="phone ">{{ phoneNumber }}</a></div>
+				<div class="contact-data _box-hang _news"><a :href="mail ">{{ mailName }}</a></div>
+			</div>
+
+			<h3>Напишите мне тут</h3>
+
+			<form class="contact-form" action="">
+				<input class="input" name="name" type="text" placeholder="Ваше имя">
+				<input class="input" name="contact" type="text" placeholder="Номер телефона или E-mail">
+				<textarea class="input" name="text" placeholder="Написать можно тут"></textarea>
+				<button class="btn-submit _box-hang _checked" type="submit">Отправить</button>
+			</form>
+
+		</div>
+	</div><!--/contacts-->
+
+<!--***********************
+	REVIEWS
+*************************-->
+	<div id="reviews" class="block__content" v-if="isShowPage === 4">
+		<div class="block__header">
+			<h2>{{ reviewsHeader }}</h2>
+		</div>
+
+		<div class="content">
+
+
+
+		</div>
+	</div><!--/contacts-->
+
+<!--***********************
+	BOOKS
+*************************-->
+	<div id="books" class="block__content" v-if="isShowPage === 5">
+		<div class="block__header">
+			<h2>{{ booksHeader }}</h2>
+		</div>
+
+		<div class="content">
+
+		</div>
+	</div><!--/contacts-->
 
 
 <!--***********************
 	NEWS
 *************************-->
-	<div id="news" class="block__content _light" v-if="isShowPage === 6">
+	<div id="news" class="block__content" v-if="isShowPage === 6">
 		<div class="block__header">
 			<h2>{{ newsHeader }}</h2>
 		</div>
 
 		<div class="content">
-				<div class="news__header">
-					<h2>{{ newsArticle[0].newsName }}</h2>
-					<div class="date">	{{ newsArticle[0].newsDate}}</div>
-				</div>
-				<p v-for="paragraf in newsArticle[0].newsContent">{{ paragraf.paragraf }}</p>
+			<div class="news__header">
+				<h2>{{ newsArticle[0].newsName }}</h2>
+				<div class="date">	{{ newsArticle[0].newsDate}}</div>
 			</div>
-	</div>
+			<p v-for="paragraf in newsArticle[0].newsContent">{{ paragraf.paragraf }}</p>
+		</div>
+	</div><!--/news-->
 
 
 </div><!--/content-block-->

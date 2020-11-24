@@ -55,7 +55,7 @@
 		&:hover>.img_text-slice{
 			transform: translate(-50%, -50%) scale(1.2);
 		}
-	}
+	}/*img*/
 
 	.title__content{
 		@include colomn;
@@ -71,16 +71,12 @@
 				@include row;
 				flex-wrap: wrap;
 
-				li{
-					border-bottom: 1px solid;
-					margin: 10px 30px 0 0;
-					padding-bottom: 5px;
-					list-style: none;
-				}
+				transition: .2s;
 			}
-		}/*links*/
+		}
+	}/*content*/
 
-		.btns{
+	.btns{
 			@include row;
 			flex-wrap: wrap;
 
@@ -103,6 +99,6 @@
 					color: $color__text-light;
 				}
 			}
-		}
-	}/*book__content*/
-}/*block__book*/
+		}/*btns*/
+
+}/*block__title*/

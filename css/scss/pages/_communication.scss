@@ -20,15 +20,14 @@
 
 
 	a{
-		@include theme(light);
+		@include theme(dark);
 		@include border(outside);
 
 		padding: 7px 20px;
-		background-color: $color__btn-light-checked;
 
 
 		&:hover{
-			background-color: $color__btn-dark-checked;
+			background-color: $color__text-menu-checked;
 		}
 	}
 }
