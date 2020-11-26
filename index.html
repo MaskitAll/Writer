@@ -153,14 +153,15 @@
 			<h3>Напишите мне тут</h3>
 
 			<form class="contact-form" action="">
-				<input class="input" name="name" type="text" placeholder="Ваше имя">
-				<input class="input" name="contact" type="text" placeholder="Номер телефона или E-mail">
-				<textarea class="input" name="text" placeholder="Написать можно тут"></textarea>
+				<input class="input input-text" name="name" type="text" placeholder="Ваше имя">
+				<input class="input input-text" name="contact" type="text" placeholder="Номер телефона или E-mail">
+				<textarea class="input input-text" name="text" placeholder="Написать можно тут" ></textarea>
 				<button class="btn-submit _box-hang _checked" type="submit">Отправить</button>
 			</form>
 
 		</div>
 	</div><!--/contacts-->
+
 
 <!--***********************
 	REVIEWS
@@ -171,11 +172,22 @@
 		</div>
 
 		<div class="content">
+			<div class="reviews_btn-container">
+				<div class="contact-data _box-hang _dark">Написать отзыв</div>
+			</div>
+
+			<div class="reviews_content _box-hangX _news" v-for="reviews in reviewsArticle">
+				<div class="reviews__header">
+					<h2>{{ reviews.reviewsName }}</h2>
+					<div class="rating">	{{ reviews.reviewsRating}}</div>
+				</div>
+				<p v-for="paragraf in reviews.reviewsContent">{{ paragraf.paragraf }}</p>
+			</div>
 
 
 
 		</div>
-	</div><!--/contacts-->
+	</div><!--/reviews-->
 
 <!--***********************
 	BOOKS
@@ -275,7 +287,6 @@
 		</div>
 
 	</div>
-
 </div><!--/content-block-->
 
 

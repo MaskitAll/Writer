@@ -77,6 +77,40 @@ new Vue({
 
 
 		reviewsHeader: "Отзывы",
+		reviewsArticle: [
+			{
+				reviewsName: "Название отзыва",
+				reviewsRating: "4",
+				reviewsContent: [
+					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
+					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
+				],
+			},{
+				reviewsName: "Название отзыва",
+				reviewsRating: "4",
+				reviewsContent: [
+					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
+					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
+				],
+			},{
+				reviewsName: "Название отзыва",
+				reviewsRating: "4",
+				reviewsContent: [
+					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
+					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
+				],
+			},{
+				reviewsName: "Название отзыва",
+				reviewsRating: "4",
+				reviewsContent: [
+					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
+					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
+				],
+			},
+		],
+
+
+
 
 
 		booksHeader: "Книги",

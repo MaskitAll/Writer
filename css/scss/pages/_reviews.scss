@@ -1,0 +1,25 @@
+.reviews_btn-container{
+	@include row;
+	position: relative;
+	justify-content: flex-end;
+
+	width: 100%;
+	height: 80px;
+
+	&>div{
+		position: fixed;
+		cursor: pointer;
+	}
+}
+
+.reviews_content{
+	padding: 30px 35px;
+	margin-bottom: 30px;
+}
+
+.reviews__header{
+	@include row;
+
+	justify-content: space-between;
+
+}

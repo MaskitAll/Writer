@@ -2,6 +2,7 @@
 	@include row;
 	justify-content: center;
 
+	flex-wrap: wrap;
 }
 
 
@@ -16,9 +17,14 @@
 		width: 100%;
 
 		border-radius: 5px;
-		padding: 15px;
+		padding: 0 15px;
 		margin: 10px;
 		border: 1px solid black;
 
+		resize: none;
+	}
+
+	textarea{
+		height: 14em;
 	}
 }
