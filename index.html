@@ -179,7 +179,13 @@
 			<div class="reviews_content _box-hangX _news" v-for="reviews in reviewsArticle">
 				<div class="reviews__header">
 					<h2>{{ reviews.reviewsName }}</h2>
-					<div class="rating">	{{ reviews.reviewsRating}}</div>
+					<div class="rating">
+						<div class="star">*</div>
+						<div class="star">*</div>
+						<div class="star">*</div>
+						<div class="star">*</div>
+						<div class="star">*</div>
+					</div>
 				</div>
 				<p v-for="paragraf in reviews.reviewsContent">{{ paragraf.paragraf }}</p>
 			</div>
