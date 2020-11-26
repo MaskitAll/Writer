@@ -23,9 +23,6 @@
 
 
 
-
-
-
 <!--***********************
 	NAV BLOCK
 *************************-->
@@ -81,8 +78,8 @@
 			<h2 style="text-align: start;">{{bookTitle}}</h2>
 			<p 	class="content" v-html="bookContent"></p>
 
-			<div class="links">
-				<ul class="links-title">{{linksTitle}}
+			<div class="links links-title">{{linksTitle}}
+				<ul>
 					<li v-for="link in links">
 						<a :href="link.link" class="link">{{link.name}}</a>
 					</li>
