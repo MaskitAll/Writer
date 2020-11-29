@@ -32,7 +32,7 @@ new Vue({
 
 		aboutPhotos: [
 			{
-				img: "#",
+				img: "/img/logo.jpg",
 				commentTitle: "Лучший писатель года",
 				comment: [
 				{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus."},
@@ -40,7 +40,7 @@ new Vue({
 				]
 			},
 			{
-				img: "#",
+				img: "https://placehold.it/350x250",
 				commentTitle: "Лучший писатель года",
 				comment: [
 				{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus."},
@@ -48,7 +48,7 @@ new Vue({
 				]
 			},
 			{
-				img: "#",
+				img: "/img/back.png",
 				commentTitle: "Лучший писатель года",
 				comment: [
 				{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus."},
@@ -56,7 +56,7 @@ new Vue({
 				]
 			},
 			{
-				img: "#",
+				img: "https://placehold.it/600x250",
 				commentTitle: "Лучший писатель года",
 				comment: [
 				{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus."},

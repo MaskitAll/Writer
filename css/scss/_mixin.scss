@@ -75,6 +75,11 @@ $color__btn-light-checked: #FF9900;
 		background-color: $color__btn-light-checked;
 //		border-color: $color__back-news;
 	}
+	@else if $theme == inherit {
+		color: inherit;
+		background-color: inherit;
+//		border-color: $color__back-news;
+	}
 }
 
 @mixin border($border: outside){

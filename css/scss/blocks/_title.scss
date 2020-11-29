@@ -2,7 +2,8 @@
 	BLOCK TITLE
 *******************/
 .block__title{
-	@include border(outside);
+	@include border(outsideX);
+
 	@include row;
 
 	z-index: 100;
@@ -53,7 +54,8 @@
 			filter: blur(2px);
 		}
 		&:hover>.img_text-slice{
-			transform: translate(-50%, -50%) scale(1.2);
+//			transform: translate(-50%, -50%) scale(1.2);
+			color: $color__text-menu-checked;
 		}
 	}/*img*/
 
@@ -81,8 +83,6 @@
 			flex-wrap: wrap;
 
 			a, button{
-				@include theme(dark);
-
 				border: 1px solid #FFFFFF;
 				padding: 10px 25px;
 				border-radius: 5px;
@@ -95,8 +95,9 @@
 				cursor: pointer;
 
 				&:hover{
-					background-color: $color__btn-dark-checked;
-					color: $color__text-light;
+					background-color: $color__btn-light-checked;
+					color: $color__text-dark;
+					border-color: $color__btn-light-checked;
 				}
 			}
 		}/*btns*/

@@ -1,33 +1,32 @@
 ._menu{
-	&, a{
 	@include theme(menu);
-	}
 }
 ._dark{
-	&, a{
 	@include theme(dark);
-	}
 }
 ._light{
-	&, a{
 	@include theme(light);
-	}
 }
 ._news{
-	&, a{
 	@include theme(news);
-	}
 }
-
 ._checked{
-	&, a{
 	@include theme(checked);
-	}
 }
 
+
+
+a{
+	@include theme(inherit);
+}
+
+._box-hangS{
+	@include border(outsideS);
+	padding: 0 5px;
+}
 
 ._box-hang{
-	@include border(outsideS);
+	@include border(outside);
 	padding: 0 5px;
 }
 
@@ -74,6 +73,14 @@ h3{
 
 .sign{
 	@include text__Book(18px, 700, 1.2, normal);
+	margin-bottom: 10px;
+	padding: 5px;
+	padding-left: 40px;
+	cursor: pointer;
+	transition: .2s;
+	&:hover{
+		@include theme(checked);
+	}
 }
 
 .sign-comm{
@@ -103,6 +110,12 @@ p{
 .btn-submit{
 	@include text__Content(18px, 500, 1.25, normal);
 	padding: 10px 30px;
+	transition: .2s;
+	cursor: pointer;
+
+	&:hover{
+		@include theme(checked);
+	}
 }
 
 .input-text{
@@ -115,6 +128,9 @@ p{
 
 	padding: 12px 20px 12px 70px;
 	margin: 10px;
+	cursor: pointer;
+	transition: .2s;
+
 
 }
 

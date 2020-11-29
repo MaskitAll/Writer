@@ -3,7 +3,12 @@
 	justify-content: center;
 
 	flex-wrap: wrap;
+
+	& div:hover{
+		@include theme(checked);
+	}
 }
+
 
 
 .contact-form{
@@ -12,6 +17,7 @@
 	align-items: center;
 
 	padding: 0 80px;
+	height: 70%;
 
 	.input{
 		width: 100%;
@@ -25,6 +31,6 @@
 	}
 
 	textarea{
-		height: 14em;
+		height: 70%;
 	}
 }
