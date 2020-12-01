@@ -46,7 +46,7 @@
 
 			<ul class="menu__items">
 				<li class="menu-item" v-on:click="isShowPage = 1" :class="{active: isShowPage == 1}">Об авторе</li>
-				<li class="menu-item" v-on:click="isShowPage = 2" :class="{active: isShowPage == 2}">Общение</li>
+				<li class="menu-item" v-on:click="isShowPage = 2" :class="{active: isShowPage == 2 || isShowPage == 7}">Общение</li>
 				<li class="menu-item" v-on:click="isShowPage = 3" :class="{active: isShowPage == 3}">Контакты</li>
 				<li class="menu-item" v-on:click="isShowPage = 4" :class="{active: isShowPage == 4}">Отзывы</li>
 				<li class="menu-item" v-on:click="isShowPage = 5" :class="{active: isShowPage == 5}">Книги</li>
@@ -124,7 +124,9 @@
 				<div class="communication__history _box-hang _news" v-for="history in commHistory">
 					<h3>{{ history.historyTitle }}</h3>
 					<p v-for="paragraf in history.historyContent">{{ paragraf.paragraf }}</p>
-					<a href="" class="btn sign-comm">{{ history.historyBtn }}</a>
+					<a href="#" class="btn sign-comm"
+						v-on:click.prevent="isShowPage = 7"
+						>{{ history.historyBtn }}</a>
 				</div>
 
 			</div>
@@ -132,6 +134,25 @@
 		</div>
 	</div><!--/communication-->
 
+<!--***********************
+	COMMUNICATION-2
+*************************-->
+	<div id="communication_2" class="block__content" v-if="isShowPage === 7">
+		<div class="block__header">
+			<h2>{{ comm2Header }}</h2>
+		</div>
+
+		<div class="content">
+			<h3> {{ comm2Title }} </h3>
+
+			<form action="" class="history-form">
+				<input class="input input-text" name="historyName" type="text" placeholder="Название истории">
+				<input class="input input-text" name="historyAutor" type="text" placeholder="Ваше имя">
+				<textarea class="input input-text" name="text" placeholder="Расскажите свою исторю тут." ></textarea>
+			</form>
+			<button class="btn-submit _box-hang _news" type="submit">Отправить</button>
+		</div>
+	</div><!--/communication-->
 
 <!--***********************
 	CONTACTS
@@ -186,9 +207,6 @@
 				</div>
 				<p v-for="paragraf in reviews.reviewsContent">{{ paragraf.paragraf }}</p>
 			</div>
-
-
-
 		</div>
 	</div><!--/reviews-->
 
@@ -232,9 +250,9 @@
 *************************-->
 <div class="bot-fon" :class="{_dark: isShowPage === 0, _light: isShowPage != 0}">
 
-	<footer class="company_link-other _dark"
+	<footer class="company_link-other _inherit"
 		v-if="isShowPage === 0">
-		<a class="img_text">Разработано voyager.ru</a>
+		<a href="#" class="img_text">Разработано voyager.ru</a>
 	</footer>
 
 
@@ -250,7 +268,7 @@
 	</a>
 
 	<a href="#stories">
-		<div class="link-scroll light-border" v-if="isShowPage === 2">Перейти к историям</div>
+		<div class="link-scroll light-border" v-if="isShowPage === 2 || isShowPage === 7">Перейти к историям</div>
 	</a>
 
 	<a href="#stories">
@@ -281,6 +299,21 @@
 		</div>
 	</div>
 
+<!--***********************
+	STORIES(COMMUNICATION)
+*************************-->
+	<div class="stories-container" v-if="isShowPage === 2 || isShowPage === 7">
+
+		<div class="stories__content _box-hangX _news" v-for="story in storiesArticle">
+			<h2>{{ story.storiesName }}</h2>
+			<p v-for="paragraf in story.storiesContent">{{ paragraf.paragraf }}</p>
+			<div class="story-footer">
+				<div class="storyAutor">{{ story.storiesAutor }}</div>
+				<div class="storyLike">{{ story.storiesLike }}</div>
+			</div>
+		</div>
+
+	</div>
 
 <!--***********************
 	NEWS
@@ -301,10 +334,11 @@
 
 
 	<!-- FOOTER -->
-	<footer class="company_link-container _dark"
-		v-if="isShowPage != 0">
+	<footer	v-if="isShowPage != 0">
+		<a href="#"  class="company_link-container">
 		<img src="/img/back.png" alt="Vuper">
 		<span class="company_link">Сайт разработан компанией Vuper</span>
+		</a>
 	</footer>
 </div><!--/content-block-->
 

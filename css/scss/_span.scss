@@ -71,6 +71,12 @@ h3{
 	@include text__Book(22px, 400, 1.1, normal);
 }
 
+
+.storyAutor{
+	@include text__Book(24px, 700, 1.92, normal);
+}
+
+
 .sign{
 	@include text__Book(18px, 700, 1.2, normal);
 	margin-bottom: 10px;
@@ -94,6 +100,7 @@ h3{
 
 p{
 	@include text__Content(16px, 400, 1.25, normal);
+	text-align: justify;
 	margin: 10px 0;
 }
 
@@ -105,7 +112,9 @@ p{
 	@include text__Content(22px, 400, 1.25, normal);
 }
 
-
+.storyLike{
+	@include text__Content(24px, 600, 1.92, normal);
+}
 
 .btn-submit{
 	@include text__Content(18px, 500, 1.25, normal);

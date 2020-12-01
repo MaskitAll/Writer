@@ -139,6 +139,32 @@ new Vue({
 
 		],
 
+
+		comm2Header: "Моя история",
+		comm2Title: "Поделитесь своей уникальной историей, которая может вдохновить на великое многих других читателей.",
+
+		storiesArticle:[
+			{
+				storiesName: "Собака по имени Евгений",
+				storiesAutor: "Мария М.Л",
+				storiesLike: "14",
+				storiesContent: [
+					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
+				],
+			},
+			{
+				storiesName: "Собака по имени Евгений",
+				storiesAutor: "Мария М.Л",
+				storiesLike: "14",
+				storiesContent: [
+					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
+					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
+				],
+			},
+		],
+
+
+
 		newsHeader: "Последняя запись",
 		newsArticle: [
 			{

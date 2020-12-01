@@ -7,6 +7,7 @@
 
 	height: 75px;
 
+	color: $color__text-dark;
 	background-color: aqua;
 	background: linear-gradient(90deg, #B08AFF 0.62%, #00FF94 100%), #BBA89D;
 
@@ -30,5 +31,9 @@
 	top: 50%;
 	left: 10%;
 	transform: translateY(-50%);
+	transition: .2s;
 
+	&:hover{
+		color: $color__text-menu-checked;
+	}
 }
