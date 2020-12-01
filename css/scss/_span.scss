@@ -147,6 +147,10 @@ p{
 	}
 }
 
+.company_link{
+	@include text__Content(18px, 600, 1.2, italic);
+}
+
 .link-scroll{
 	@include text__Content(14px, 600, 3.1, normal);
 

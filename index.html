@@ -232,6 +232,12 @@
 *************************-->
 <div class="bot-fon" :class="{_dark: isShowPage === 0, _light: isShowPage != 0}">
 
+	<footer class="company_link-other _dark"
+		v-if="isShowPage === 0">
+		<a class="img_text">Разработано voyager.ru</a>
+	</footer>
+
+
 </div><!--/content-block-->
 
 
@@ -291,6 +297,15 @@
 		</div>
 
 	</div>
+
+
+
+	<!-- FOOTER -->
+	<footer class="company_link-container _dark"
+		v-if="isShowPage != 0">
+		<img src="/img/back.png" alt="Vuper">
+		<span class="company_link">Сайт разработан компанией Vuper</span>
+	</footer>
 </div><!--/content-block-->
 
 
