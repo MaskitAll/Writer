@@ -111,6 +111,12 @@ $color__btn-light-checked: #FF9900;
 	}
 }
 
+
+@mixin romb($size: 1rem){
+	width: $size;
+	height: $size;
+}
+
 @mixin row{
 	display: flex;
 	flex-direction: row;

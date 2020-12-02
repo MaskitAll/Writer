@@ -170,6 +170,13 @@ new Vue({
 			{
 				newsName: "Новость",
 				newsDate: "08.10.2020",
+				newsImages: [
+					{img: "https://placehold.it/650x550"},
+					{img: "https://placehold.it/65x550"},
+					{img: "https://placehold.it/650x55"},
+					{img: "https://placehold.it/60x50"},
+					{img: "https://placehold.it/6250x550"},
+				],
 				newsContent: [
 					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
 					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
@@ -181,6 +188,15 @@ new Vue({
 				{
 				newsName: "Новость",
 				newsDate: "08.10.2020",
+				newsImages: [
+					{img: "https://placehold.it/650x550"},
+					{img: "https://placehold.it/65x550"},
+					{img: "https://placehold.it/65x550"},
+					{img: "https://placehold.it/65x550"},
+					{img: "https://placehold.it/650x55"},
+					{img: "https://placehold.it/60x50"},
+					{img: "https://placehold.it/6250x550"},
+				],
 				newsContent: [
 					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
 					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
@@ -188,6 +204,10 @@ new Vue({
 			},	{
 				newsName: "Новость",
 				newsDate: "08.10.2020",
+				newsImages: [
+					{img: "https://placehold.it/650x550"},
+					{img: "https://placehold.it/65x550"},
+				],
 				newsContent: [
 					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},
 					{paragraf: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida nibh.Sapien velit at in ultrices dui nec eleifend augue mattis. Nisl malesuada tortor, gravida risus adipiscing gravida."},

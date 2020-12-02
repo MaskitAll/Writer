@@ -237,6 +237,11 @@
 				<h2>{{ newsArticle[0].newsName }}</h2>
 				<div class="date">	{{ newsArticle[0].newsDate}}</div>
 			</div>
+
+			<div class="img_container-vertical" >
+				<img class="_box-hang" v-for="img in newsArticle[0].newsImages" :src="img.img" alt="img">
+			</div>
+
 			<p v-for="paragraf in newsArticle[0].newsContent">{{ paragraf.paragraf }}</p>
 		</div>
 	</div><!--/news-->
@@ -324,12 +329,11 @@
 				<h2>{{ news.newsName }}</h2>
 				<div class="date">	{{ news.newsDate}}</div>
 			</div>
+
 			<div class="img_container">
-			<img class="_box-hang" src="https://placehold.it/6000x2500" alt="">
-			<img class="_box-hang" src="https://placehold.it/650x550" alt="">
-			<img class="_box-hang" src="https://placehold.it/220x50" alt="">
-			<img class="_box-hang" src="/img/books.png" alt="">		<img class="_box-hang" src="https://placehold.it/20x50" alt="">
+				<img class="_box-hang"  v-for="img in news.newsImages" :src="img.img" alt="img">
 			</div>
+
 			<!-- {{ news.img }}-->
 			<p v-for="paragraf in news.newsContent">{{ paragraf.paragraf }}</p>
 		</div>
