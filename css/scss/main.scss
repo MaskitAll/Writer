@@ -176,6 +176,7 @@ body{
 		float: left;
 		object-fit: contain;
 		box-sizing: border-box;
+		transition: 1s;
 	}
 
 	& img:first-child{
@@ -189,7 +190,6 @@ body{
 
 	& img:not(:first-child):hover{
 		transform: scale(3);
-		transition: 1s;
 	}
 }
 
@@ -218,12 +218,12 @@ body{
 
 		object-fit: contain;
 		box-sizing: border-box;
+		transition: 1s;
 	}
 
 
 	&>img:hover{
 		z-index: 100;
 		transform: scale(3);
-		transition: 1s;
 	}
 }
