@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="shortcut icon" href="/img/logo.jpg" type="image/png">
+	<title>Наталья Хаимова</title>
+
+	<!-- Подключение стилей	-->
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/main.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Подключение VUE.js-->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+<div id="main">
+<!--Основной экран-->
+<div class="base_screen">
+
+<!--Блок с меню-->
+<nav class="main_menu-block _dark">
+	<div class="nav_name-block _light"  v-on:click="isShowPage = 0" >
+		<a href="#">
+			<h2>Наталия Хаимова</h2>
+		</a>
+	</div>
+
+	<div class="nav_menu-block">
+		<h3>Меню</h3>
+		<ul>
+			<li class="menu-item" v-on:click="isShowPage = 1" :class="{active: isShowPage == 1}">Об авторе</li>
+			<li class="menu-item" v-on:click="isShowPage = 2" :class="{active: isShowPage == 2 || isShowPage == 7}">Общение</li>
+			<li class="menu-item" v-on:click="isShowPage = 3" :class="{active: isShowPage == 3}">Контакты</li>
+			<li class="menu-item" v-on:click="isShowPage = 4" :class="{active: isShowPage == 4}">Отзывы</li>
+			<li class="menu-item" v-on:click="isShowPage = 5" :class="{active: isShowPage == 5}">Книги</li>
+			<li class="menu-item" v-on:click="isShowPage = 6" :class="{active: isShowPage == 6}">Блог</li>
+		</ul>
+	</div>
+</nav>
+
+
+<!--Блок с основным контентом-->
+<div class="main_content-block">
+<!--Блок-превью для книги-->
+<div class="book-block"  v-if="isShowPage === 0">
+	<div class="book-preview">
+
+		<div class="book-img">
+			<a href="#" alt="Открыть фрагмент">
+				<img src="/img/back.png" alt="">
+				<div class="open_fragment open_fragment-font">Открыть фрагмент</div>
+			</a>
+		</div>
+
+		<h3>АромаТы АпрелЯ</h3>
+		<div class="book-content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem distinctio corporis officia necessitatibus hic, debitis deserunt reprehenderit vero dolore aspernatur, quo sequi sint nobis, dolorum provident ducimus molestias reiciendis repudiandae!</p>
+		</div>
+		<div class="buttons-container">
+			<button class="btn btn_1 btn-dark">Купить книгу</button>
+			<button class="btn btn_2 btn-light">Book-трейлер</button>
+		</div>
+	</div>
+</div><!--/Блок-превью для книги-->
+
+
+<!--Блок с биографией-->
+<div class="biografy-block block"  v-if="isShowPage === 1">
+	<h2 class="page-title">Биография</h2>
+	<div class="biografy-content block-content">
+		<img class="biografy-image" src="/img/closeup-photo-of-smiling-woman-wearing-blue-denim-jacket-1130626%201.png" alt="Haimova">
+		<h1>Наталия  Хаимова</h1>
+		<div class="biografy-text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+		</div>
+
+			<a class="btn btn-dark btn_1" href="#">
+
+		<svg id="instagram" viewBox="0 0 511 511.9" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg>
+			Inst: instagram</a>
+	</div>
+
+	<a class="biografy-footer block-footer" href="#">
+		<h5>Фотографии</h5>
+		<div class="arrow"></div>
+	</a>
+
+</div><!--/Блок с биографией-->
+
+
+<!--Блок с общением-->
+<div class="communication-block block"  v-if="isShowPage === 7">
+	<h2 class="page-title">Общение</h2>
+	<div class="communication-content block-content">
+		<h4>Выберите тему для общения которая Вам интересна.<br>
+		Не стесняйтесь выражать свою мысль, главное делать это культурно.</h4>
+
+		<div class="communication_stories-container">
+			<div class="communication-card">
+				<h4>Моя история</h4>
+				<p>Тут Вы можете поделиться своей жизненной историей или вдохновится чужой, я уверена, что у каждого есть уникальный жизненный опыт, который заставит других слушать с удивлением.</p>
+				<div class="btn_3 btn btn-dark">Открыть</div>
+
+			</div>
+
+			<div class="communication-card">
+				<h4>Моя история</h4>
+				<p>Тут Вы можете поделиться своей жизненной историей или вдохновится чужой, я уверена, что у каждого есть уникальный жизненный опыт, который заставит других слушать с удивлением.</p>
+				<div class="btn_3 btn btn-dark">Открыть</div>
+			</div>
+			<div class="communication-card">
+				<h4>Моя история</h4>
+				<p>Тут Вы можете поделиться своей жизненной историей или вдохновится чужой, я уверена, что у каждого есть уникальный жизненный опыт, который заставит других слушать с удивлением.</p>
+				<div class="btn_3 btn btn-dark">Открыть</div>
+			</div>
+			<div class="communication-card">
+				<h4>Моя история</h4>
+				<p>Тут Вы можете поделиться своей жизненной историей или вдохновится чужой, я уверена, что у каждого есть уникальный жизненный опыт, который заставит других слушать с удивлением.</p>
+				<div class="btn_3 btn btn-dark">Открыть</div>
+			</div>
+
+		</div>
+
+	</div>
+</div><!--/Блок с общением-->
+
+
+<!--Блок с общением-->
+<div class="stories-block block" v-if="isShowPage === 2">
+	<h2 class="page-title"> Моя история</h2>
+	<div class="stories-content block-content">
+
+			<h4>Поделитесь своей уникальной историей, которая
+			может вдохновить на великое многих других читателей.</h4>
+
+			<form action="" class="stories-form">
+			<div class="input_stories-container">
+				<input class="input input-text _light" name="storyName" type="text" placeholder="Название истории">
+				<input class="input input-text _light" name="storyAutor" type="text" placeholder="Ваше имя">
+			</div>
+				<textarea class="input-text _light" name="text" placeholder="Расскажите свою исторю тут." ></textarea>
+
+			<button class="btn-submit btn btn_2 btn-white" type="submit">Отправить</button>
+			</form>
+	</div>
+</div><!--/Блок с общением 2-->
+
+
+<!--Блок с контактами-->
+<div class="contact-block block"  v-if="isShowPage === 3">
+	<h2 class="page-title">Контакты</h2>
+	<div class="contact-content block-content">
+
+			<div class="contacts-container">
+				<a class="contact-data btn btn_5 btn-white" :href="phone">
+						<svg id="phone" viewBox="0 0 511 511.9" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg>8 800 555 35 35</a>
+				<a class="contact-data btn btn_5 btn-white" :href="mail">
+						<svg  id="mail" viewBox="0 0 511 511.9" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg>G-mai@e-mail.ru</a>
+			</div>
+
+			<h4>Напишите мне тут</h4>
+
+			<form class="contact-form" action="">
+				<input class="input input-text" name="name" type="text" placeholder="Ваше имя">
+				<input class="input input-text" name="contact" type="text" placeholder="Номер телефона или E-mail">
+				<textarea class="input-text" name="text" placeholder="Написать можно тут" ></textarea>
+				<button class="btn-submit btn btn_4 btn-white" type="submit">Отправить</button>
+			</form>
+
+	</div>
+</div><!--/Блок с контактами-->
+
+
+<!--Блок с отзывами-->
+<div class="reviews-block block"  v-if="isShowPage === 4">
+	<h2 class="page-title">Отзывы</h2>
+	<div class="reviews-content block-content">
+
+		<div class="reviews-item ">
+			<div class="reviews_item-title">
+				<h3>Название большого большого
+					большого большого большого
+					большого большого отзыва
+				</h3>
+				<div class="stars">* * * * *</div>
+			</div>
+
+			<div class="reviews_item-content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				</p>
+			</div>
+		</div>
+		<div class="reviews-item ">
+			<div class="reviews_item-title">
+				<h3>Название большого большого
+					большого большого большого
+					большого большого отзыва
+				</h3>
+				<div class="stars">* * * * *</div>
+			</div>
+
+			<div class="reviews_item-content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				</p>
+			</div>
+		</div>
+		<div class="reviews-item ">
+			<div class="reviews_item-title">
+				<h3>Название большого большого
+					большого большого большого
+					большого большого отзыва
+				</h3>
+				<div class="stars">* * * * *</div>
+			</div>
+
+			<div class="reviews_item-content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore molestiae quidem recusandae iste quos labore exercitationem repellendus repudiandae, obcaecati officiis alias expedita, a numquam assumenda rem excepturi debitis quas nisi.
+				</p>
+			</div>
+		</div>
+
+	</div>
+</div><!--/Блок с отзывами-->
+
+
+<!--Блок с новостями-->
+<div class="news-block block"  v-if="isShowPage === 6">
+	<h2 class="page-title">Последняя запись</h2>
+	<div class="news-content block-content">
+		<div class="news-image_block"></div>
+		<div class="news-item">
+			<div class="news_item-title">
+				<h3>Новость</h3>
+				<div class="data">08.10.2020</div>
+			</div>
+			<div class="news_item-text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+			</div>
+
+		</div>
+	</div>
+
+	<a class="news-footer block-footer" href="#">
+		<h5>Другие новости</h5>
+		<div class="arrow"></div>
+	</a>
+
+</div><!--/Блок с новостями-->
+
+
+</div><!--/Блок с основным контентом-->
+
+
+</div>
+
+
+
+
+<!--Дополнительный экран-->
+<div class="excess_screen">
+
+.abo
+
+
+
+
+
+</div>
+
+</div><!--/.main-->
+
+
+
+<!-- FOOTER -->
+<footer class="vuper">
+	<a href="#"  class="company_link-container">
+	<img src="/img/vuper.svg" alt="Vuper">
+	<span class="company_link">Сайт разработан компанией Vuper</span>
+	</a>
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

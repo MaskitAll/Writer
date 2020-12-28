@@ -1,0 +1,28 @@
+.stories-block {
+//	display: none;
+}
+
+.stories-content{
+	padding: 0 5rem;
+	text-align: center;
+
+}
+
+.stories-form{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+
+	.input_stories-container{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin: 2rem 0;
+
+	}
+
+	.btn-submit{
+		align-self: flex-start;
+	}
+}

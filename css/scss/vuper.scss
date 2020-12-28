@@ -1,0 +1,28 @@
+.vuper{
+	flex: 0 0 auto;
+	height: 7.5rem;
+
+
+	.company_link-container{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+
+		@include font(1.8rem, 600, 2.2rem, italic);
+		@extend %montserrat;
+
+		color: #fff;
+		background-color: aqua;
+		background: linear-gradient(90deg, #B08AFF 0.62%, #00FF94 100%), #BBA89D;
+
+		img{
+			height: 100%;
+			width: auto;
+
+			object-fit: contain;
+			padding: .6rem 2rem;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+	.nav_name-block{
+		@include block(1rem, 1rem 2rem, 0);
+		text-align: justify;
+		margin-bottom: 3rem;
+
+	}
+
+	.nav_menu-block{
+		@include block(1rem, 0, 0);
+		border: .1rem solid $light;
+
+		width: 100%;
+
+		h3{
+			margin: 1.5rem;
+		}
+
+		& ul{
+
+			display: flex;
+			text-align: left;
+
+			border-top: .1rem solid $light;
+			padding: 0 2rem 2rem;
+
+			li{
+				display: inline-block;
+				position: relative;
+				cursor: pointer;
+				width: 100%;
+				padding: 1.5rem 0;
+			}
+
+			li::after{
+				content: '';
+				position: absolute;
+				@include square(true, 1.3rem);
+
+				top: 50%;
+				right: 3rem;
+				transform: translateY(-50%) scale(0);
+				background-color: $orange;
+				transition: .2s;
+			}
+
+			li:hover, li:hover a{
+				color: $orange;
+			}
+
+			li:hover:after{
+				transform: translateY(-50%) scale(1);
+			}
+
+			.active{
+				color: $orange;
+			}
+
+		}
+
+	}

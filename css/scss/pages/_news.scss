@@ -1,0 +1,26 @@
+.news-block{
+//	display: none;
+
+}
+
+.news-content{
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	width: 100%;
+
+
+	.news-image_block{
+		width: 20%;
+	}
+
+	.news-item{
+		width: 80%;
+
+		.news_item-title{
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+}
