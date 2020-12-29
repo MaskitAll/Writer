@@ -1,20 +1,78 @@
 .biografy-block{
-//	display: none;
+.biografy-content{
 
-	.biografy-content{
+	.biografy-image{
+		float: left;
 
-		.biografy-image{
-			float: left;
+		@include block(.5rem, 0, 0 2rem 1rem 0);
+	}
 
-			@include block(.5rem, 0, 0 2rem 1rem 0);
-		}
-
-		.biografy-text{
-			margin: 2rem 0;
-
-		}
+	.biografy-text{
+		margin: 2rem 0;
 
 	}
+
+}
 }
 
 
+.biografy-exblock{
+	padding: 5rem 0;
+}
+
+.h_slider-photo{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+//	box-sizing: border-box;
+
+	.photo-item{
+		width: 30rem;
+		height: 55rem;
+//		flex-grow: 0;
+		@include block(2rem, 1.5rem 2rem, 0 3rem);
+
+		box-sizing: border-box;
+		transition: .2s;
+		overflow: hidden;
+
+		border: 1.5px solid $white;
+
+		&:hover{
+			border: 1.5px solid $orange;
+			box-shadow: 0 .6rem 1rem rgba(0, 0, 0, 0.4);
+		}
+		&:hover .photo-container{
+			background: $orange;
+		}
+
+		.photo-container{
+			width: 100%;
+
+			margin-bottom: 1rem;
+
+			background: $light;
+			box-shadow: 0 .6rem 1rem rgba(0, 0, 0, 0.4);
+			border-radius: 2.2rem;
+			transition: .2s;
+
+			img{
+				object-fit: cover;
+				padding: 1.3rem;
+				width: 100%;
+				height: 100%;
+				border-radius: 2.2rem;
+
+			}
+		}
+		.photo-title{
+			margin-bottom: .5rem;
+		}
+
+		.photo-text {
+			max-height: 21rem;
+			overflow-y: hidden;
+		}
+	}
+}

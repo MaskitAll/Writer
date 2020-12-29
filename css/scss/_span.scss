@@ -60,6 +60,15 @@ ul{
 	@include font(2.2rem, 400, 2.7rem, normal);
 }
 
+.title_4{
+	@extend %bookAntiqua;
+	@include font(1.8rem, 700, 2.2rem, normal);
+}
+
+.text_1{
+	@extend %montserrat;
+	@include font(1.5rem, 400, 1.8rem, normal);
+}
 
 
 .open_fragment-font{
@@ -156,6 +165,10 @@ ul{
 		fill: $black;
 	}
 }
+
+
+
+
 
 #instagram{
 	padding-right: 1rem;

@@ -44,6 +44,8 @@
 
 <!--Блок с основным контентом-->
 <div class="main_content-block">
+
+
 <!--Блок-превью для книги-->
 <div class="book-block"  v-if="isShowPage === 0">
 	<div class="book-preview">
@@ -245,19 +247,24 @@
 <div class="news-block block"  v-if="isShowPage === 6">
 	<h2 class="page-title">Последняя запись</h2>
 	<div class="news-content block-content">
-		<div class="news-image_block"></div>
-		<div class="news-item">
-			<div class="news_item-title">
-				<h3>Новость</h3>
-				<div class="data">08.10.2020</div>
-			</div>
-			<div class="news_item-text">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
-			</div>
 
+		<div class="news-item">
+			<div class="news_item-image"></div>
+
+			<div class="news_item-content">
+
+				<div class="news_item-title">
+					<h3>Новость</h3>
+					<div class="data">08.10.2020</div>
+				</div>
+
+				<div class="news_item-text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -280,10 +287,87 @@
 <!--Дополнительный экран-->
 <div class="excess_screen">
 
-.abo
+
+<!--Дополнительный блок с биографией-->
+<div class="biografy-exblock"  v-if="isShowPage === 1">
+	<div class="h_slider-photo">
+
+		<div class="photo-item">
+			<div class="photo-container">
+				<img src="/img/back.png" alt="photo">
+			</div>
+			<div class="photo-title title_4">Лучший писатель года</div>
+			<div class="photo-text text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam.</div>
+		</div>
+
+		<div class="photo-item">
+			<div class="photo-container">
+				<img src="/img/back.png" alt="photo">
+			</div>
+			<div class="photo-title title_4">Лучший писатель года</div>
+			<div class="photo-text text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam.</div>
+		</div>
+
+		<div class="photo-item">
+			<div class="photo-container">
+				<img src="/img/back.png" alt="photo">
+			</div>
+			<div class="photo-title title_4">Лучший писатель года</div>
+			<div class="photo-text text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet recusandae obcaecati praesentium pariatur, perspiciatis ipsam, exercitationem ut cumque itaque. Nobis nam numquam eum necessitatibus, sunt delectus nostrum cumque fugit quas.</div>
+		</div>
+
+		<div class="photo-item">
+			<div class="photo-container">
+				<img src="/img/back.png" alt="photo">
+			</div>
+			<div class="photo-title title_4">Лучший писатель года</div>
+			<div class="photo-text text_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi aenean tortor vulputate cursus duis egestas vulputate. Interdum lacinia tincidunt senectus aliquam, penatibus facilisi egestas suspendisse lectus. Enim, ac sed tempor aliquam.</div>
+		</div>
+
+	</div>
+</div><!--/Дополнительный блок с биографией-->
 
 
+<!--Дополнительный блок с новостями-->
+<div class="news-exblock"  v-if="isShowPage === 6">
 
+		<div class="news-item news_item-footer _light">
+			<div class="news_item-image"></div>
+
+			<div class="news_item-content">
+
+				<div class="news_item-title">
+					<h3>Новость</h3>
+					<div class="data">08.10.2020</div>
+				</div>
+
+				<div class="news_item-text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="news-item news_item-footer _light">
+
+			<div class="news_item-content">
+				<div class="news_item-title">
+					<h3>Новость</h3>
+					<div class="data">08.10.2020</div>
+				</div>
+
+				<div class="news_item-text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem nisi deleniti sequi dolores laborum nulla fuga praesentium quod tempora impedit? Possimus similique, eum voluptatem consequatur tempore, perferendis unde officiis eaque!</p>
+				</div>
+			</div>
+		</div>
+
+</div><!--/Дополнительный блок с новостями-->
 
 
 </div>

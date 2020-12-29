@@ -1,7 +1,6 @@
 @import '_mixin';
 @import '_span';
 
-
 @import 'vuper';
 
 @import 'blocks/_title';
@@ -45,6 +44,8 @@ html, body{
 .excess_screen{
 	height: auto;
 	width: 100%;
+	border-top: 2px solid $black;
+
 }
 
 .main_menu-block{
@@ -73,7 +74,7 @@ html, body{
 	}
 
 	.block-content{
-		height: 60rem;
+		height: 59rem;
 		overflow-y: auto;
 		padding: 1rem;
 	}

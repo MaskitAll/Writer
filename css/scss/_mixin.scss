@@ -121,7 +121,7 @@ a{
 
 
 /*BLOCKS*/
-@mixin block($radius: 0rem,  $padding: $radius / 2, $margin: none){
+@mixin block($radius: 0rem, $padding: $radius / 2, $margin: none){
 	display: inline-block;
 	padding: $padding;
 	margin: $margin;
